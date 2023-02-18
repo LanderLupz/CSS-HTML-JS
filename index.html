@@ -17,7 +17,7 @@
 			margin: 20px; 
 		}
 	section{
-	width: 390px;
+	
 	height: auto;
 	border: 2px solid black;
 	float: left;
@@ -43,25 +43,41 @@
 	section p{
 	clear: right;
 }
+@media (min-width: 992px) {
+	section{
+		width: 33.3%;
+		background-color: gray; 
+	}
+	
+}
+@media (min-width: 768px) and (max-width: 991px){
+	#se1{
+		position: relative;
+		width: 50%;
+	}
+	#se2{
+		width: 47.9%;
+	}
+}
 
 	</style>
 		<h1>MY HOBBIES</h1>
 	<div class="pbox">
-	<section>
+	<section id="se1">
 	<h3 id="h">Skateboarding</h3>
 	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat.</p>
 	</section>
-	<section>
+	<section id="se2">
 	<h3 id="hw">Eating</h3>
 	<p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat.</p>
 	</section>
-	<section>
+	<section id="se3">
 	<h3 id="he">Studying</h3>
 	<p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
