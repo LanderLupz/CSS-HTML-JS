@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MODULE 2 SOLUTION</title>
+</head>
+<body>
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			text-align: center;
+			margin: 20px; 
+		}
+	h3{
+		border: 2px solid black;
+		width: 150px;
+		text-align: center;
+		float: right;
+	}
+	p{
+	width: 400px;
+	height: 250px;
+	border: 2px solid black;
+	margin: 10px;
+	float: left;
+	}
+	.col{
+		position: relative;
+		border: 2px solid red;
+		
+	}
+	#MH{
+		float: left;
+	}
+	#MH2{
+		float: right;
+	}
+	#MH3{
+		clear: left;
+	}
+	@media (max-width: 992px){
+		.col{
+			position: relative;
+			width: 31%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 991px){
+		.col{
+			width: 50%;
+			float: right;
+		}
+	} 
+	@media (min-width: 767px){
+		.col{
+			position: absolute;
+			width: 100%;
+		}
+	}
+	
+	</style>
+	<h1>My Hobbies</h1>
+	<div class="col">
+		<h3>Skateboarding</h3>
+ 	<p id="MH">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. </p>
+		<h3>Eating</h3>
+	<p id="MH2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. </p>
+ 		<h3>Studying</h3>
+ 	<p id="MH3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. </p>
+ 	</div>
+</body>
+</html>
